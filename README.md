@@ -2,13 +2,13 @@
 
 A production-grade, highly customizable Flutter package for progressive, blurry image loading. Seamlessly display immediate visual placeholders while high-definition network images load, then crossfade to them.
 
-Ideal for building WordPress-like or Instagram-like image loading animations with minimal footprint.
+Ideal for building progressive and elegant image loading animations with minimal footprint.
 
 ## Features
 
 - **Pure Dart Algorithm**: Implements the BlurHash decoding algorithm natively in Dart. No platform channel overhead.
 - **Three Placeholder Strategies**:
-  - **Automatic Blurry Placeholder (Recommended)**: Simply pass an `imageUrl`. If it is a resizable network URL (e.g. from Dreamstime, WordPress, Unsplash, Cloudinary), `ImageHash` automatically extracts and loads a blurred 20px thumbnail dynamically.
+  - **Automatic Blurry Placeholder (Recommended)**: Simply pass an `imageUrl`. If it is a resizable network URL (e.g. from Dreamstime, Unsplash, Cloudinary), `ImageHash` automatically extracts and loads a blurred 20px thumbnail dynamically.
   - **Blurred Thumbnail URL**: Manually fetch and blur a low-resolution thumbnail URL of your choice.
   - **On-Device BlurHash**: Instant rendering of a compact base83 BlurHash string with zero network overhead.
 - **Rich Styling & Decoration**: Directly pass a `decoration` (e.g., rounded corners, custom borders, shadows) in parameters. The image automatically clips to your corners.
@@ -47,7 +47,7 @@ ImageHash(
 )
 ```
 
-### 2. WordPress Style (Custom Low-Res Thumbnail URL)
+### 2. Custom Low-Res Thumbnail (Manual Thumbnail URL)
 If you have custom URLs for your thumbnails, pass the low-resolution thumbnail URL manually:
 
 ```dart
