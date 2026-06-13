@@ -15,3 +15,9 @@ Navigate to the `example` directory and run:
 ```bash
 flutter run
 ```
+
+Or for web:
+
+```bash
+flutter run -d chrome
+```
