@@ -1,3 +1,8 @@
+## 1.0.3
+
+* Switched README demo to an optimized animated GIF (modal.gif).
+* Added sidebar screenshot to pub.dev package page.
+
 ## 1.0.2
 
 * Updated README.md with direct demo video showing progressive image loading.
