@@ -4,6 +4,12 @@ A production-grade, highly customizable Flutter package for progressive, blurry 
 
 Ideal for building progressive and elegant image loading animations with minimal footprint.
 
+<p align="center">
+  <video src="https://raw.githubusercontent.com/Bhaumik0248/flutter_image_hash/master/assets/flutter_blur_hash.mov" width="100%" controls autoplay loop muted></video>
+  <br>
+  <em>(If the video above doesn't play, you can view it directly <a href="https://github.com/Bhaumik0248/flutter_image_hash/blob/master/assets/flutter_blur_hash.mov">here on GitHub</a>)</em>
+</p>
+
 ## Features
 
 - **Pure Dart Algorithm**: Implements the BlurHash decoding algorithm natively in Dart. No platform channel overhead.
