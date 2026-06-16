@@ -1,3 +1,8 @@
+## 1.0.4
+
+* Reordered README usage examples for better onboarding flow.
+* Replaced demo GIF with a higher quality, optimized recording.
+
 ## 1.0.3
 
 * Switched README demo to an optimized animated GIF (modal.gif).

@@ -1,5 +1,9 @@
 # flutter_image_hash
 
+[![Pub Version](https://img.shields.io/pub/v/flutter_image_hash?logo=dart)](https://pub.dev/packages/flutter_image_hash)
+[![Likes](https://img.shields.io/pub/likes/flutter_image_hash)](https://pub.dev/packages/flutter_image_hash)
+[![License](https://img.shields.io/github/license/Bhaumik0248/flutter_image_hash)](https://github.com/Bhaumik0248/flutter_image_hash/blob/master/LICENSE)
+
 A production-grade, highly customizable Flutter package for progressive, blurry image loading. Seamlessly display immediate visual placeholders while high-definition network images load, then crossfade to them.
 
 Ideal for building progressive and elegant image loading animations with minimal footprint.
@@ -51,7 +55,20 @@ ImageHash(
 )
 ```
 
-### 2. Custom Low-Res Thumbnail (Manual Thumbnail URL)
+### 2. On-Device BlurHash Placeholder
+Use this for instant, network-free placeholders. Pass the pre-computed BlurHash string of the image:
+
+```dart
+ImageHash(
+  hash: "UYReRC$%?]NHx]WVV?s:%yR+Myt6jDs.b0NH",        // Decoded on-device instantly
+  imageUrl: "https://example.com/image.jpg?w=992",     // HD main image URL
+  width: double.infinity,
+  height: 250,
+  fit: BoxFit.cover,
+)
+```
+
+### 3. Custom Low-Res Thumbnail (Manual Thumbnail URL)
 If you have custom URLs for your thumbnails, pass the low-resolution thumbnail URL manually:
 
 ```dart
@@ -59,19 +76,6 @@ ImageHash(
   thumbnailUrl: "https://example.com/image_small.jpg", // Custom low-res thumbnail URL
   imageUrl: "https://example.com/image_hd.jpg",        // HD main image URL
   blurSigma: 12.0,
-  width: double.infinity,
-  height: 250,
-  fit: BoxFit.cover,
-)
-```
-
-### 3. Instagram Style (On-Device BlurHash Placeholder)
-Use this for instant, network-free placeholders. Pass the pre-computed BlurHash string of the image:
-
-```dart
-ImageHash(
-  hash: "UYReRC$%?]NHx]WVV?s:%yR+Myt6jDs.b0NH",        // Decoded on-device instantly
-  imageUrl: "https://example.com/image.jpg?w=992",     // HD main image URL
   width: double.infinity,
   height: 250,
   fit: BoxFit.cover,

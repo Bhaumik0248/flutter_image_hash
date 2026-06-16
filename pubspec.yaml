@@ -1,6 +1,6 @@
 name: flutter_image_hash
 description: "A comprehensive Flutter package for generating and displaying compact image placeholders using the BlurHash algorithm. Ideal for immediate visual feedback."
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/Bhaumik0248/flutter_image_hash
 repository: https://github.com/Bhaumik0248/flutter_image_hash
 issue_tracker: https://github.com/Bhaumik0248/flutter_image_hash/issues
